@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title></title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato|Montserrat|PT+Sans">
+    <link rel="stylesheet" href="./assets/xiabai.main.css">
+
+</head>
+<body>
+	<div id="four-oh-four">
+		<div class="banner-pg">
+			<div class="middle-text displ">
+				<div class="large-sized b-2 title">
+					404 Not Found
+				</div>
+				<div class="b-2">
+					If this page shows up, the content you are looking for doesn't exist. Please consider go back
+					to the homepage.
+				</div>
+				<div class="look-how">
+					<a href="?remove_the_question_mark_for_me">Take me back to the homepage! &gt;&gt;</a>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div id="bundle">
+		<div class="banner-pg">
+			<div class="middle-text displ">
+				<div class="large-sized b-2 title">
+					Xiabai Bundle
+				</div>
+				<div class="middle-sized b-2 resp-w-60">
+					What you are going to see in this page is going to be the <strong>most</strong> powerful
+					tools
+					in the universe.
+				</div>
+				<div class="now-release">
+					Current Version: 42.0.3.141592653
+				</div>
+			</div>
+		</div>
+		<div class="release-pg">
+			<div class="m-5 flex resp-flex-col">
+				<div class="resp-w-20 flex ac"> 
+					<!-- Left -->
+					<!-- ilib logo start -->
+					<div class="item-logo ilib">
+						ilib
+					</div>
+					<!-- ilib logo end -->
+					<!-- End Left -->
+				</div>
+				<div class="resp-w-80 displ resp-centre">
+					<h2>
+						<span class="ilib-font"><a href="?ilib" class="content-a">ilib</a></span>
+					</h2>
+					<div class="resp-description">
+						First designed in an English test by the founder and the chief software engineer, <em>ilib</em> is both a content-sharing site
+						and an Internet notebook. Broadcast your deep dark fantasies at the sharing kiosk, and record your life in your notebook. Port 0 is
+						used to further ensure content security of <em>ilib</em> users.
+					</div>
+				</div>
+			</div>
+		</div>
+		
+	</div>
+	<div id="main">
+		<div class="banner-pg">
+			<div class="middle-text displ">
+				<div class="large-sized b-2 title">
+					Xiabai Bundle
+				</div>
+				<div class="middle-sized b-2">
+					Your first all-in-one bundle for your work and study. <br>
+					And probably the only and last. <br>
+					All at <strong>Madeup, plc.</strong>
+				</div>
+				<div class="look-how">
+					<a href="?bundle">Look how you can make the best out of Xiabai Bundle &gt;&gt;</a>
+				</div>
+			</div>
+		</div>
+		
+	</div>
+	<!-- Enable always-on display of footer -->
+	<div class="footer m-2 flex resp-flex-row displ resp-ac">
+		<div class="company-info">
+			<strong>Madeup, plc.</strong> <br>
+			147 Imagination Rd., <br>
+			Turret, <br>
+			Saveur, Dualduck CN 081029
+		</div>
+		<div class="info-bar">
+			<a href="?careers">Be a Xiabaier!</a> <br>
+			<a href="?about">About <strong>Madeup, plc.</strong></a> <br>
+			<a href="?ilib">Use <em>ilib</em>!</a>
+		</div>
+	</div>
+
+</body>
+    <script>
+		const queryString = window.location.search;
+		
+		if (queryString === "?remove_the_question_mark_for_me") {
+			window.location.href = window.location.href.slice(0, -32);
+		}
+		
+		const bundle = document.getElementById("bundle");
+		const main = document.getElementById("main");
+		const fof = document.getElementById("four-oh-four");
+		const validQueries = ["?bundle", "?main"];
+		
+		if (queryString === "") {
+			main.style.display = "block";
+		} else {
+			const urlParams = new URLSearchParams(queryString);
+			if (validQueries.indexOf(queryString) === -1) {
+				fof.style.display = "block";
+			} else {
+				if (urlParams.has("main")) {
+					main.style.display = "block";
+				}
+				if (urlParams.has("bundle")) {
+					bundle.style.display = "block";
+				}
+			}
+		}
+    </script>
+</html>

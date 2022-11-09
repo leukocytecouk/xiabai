@@ -1,0 +1,195 @@
+.banner-pg,
+.release-pg {
+	width: 100%;
+	display: flex;
+}
+
+.banner-pg {
+	min-height: 100vh;
+	justify-content: center;
+	align-items: center;
+}
+
+.release-pg {
+	min-height: 80vh;
+	justify-content: flex-start;
+	align-items: flex-start;
+}
+
+body {
+	width: 100%;
+	height: 100%;
+	margin: 0;
+	padding: 0;
+	display: flex;
+	flex-direction: column;
+}
+
+.middle-text {
+	height: auto;
+	width: 80%;
+	display: block;
+	margin: 5%;
+	/* font-size: 1.75rem; */
+}
+
+.middle-sized {
+	font-size: 1.5rem;
+}
+
+.large-sized {
+	font-size: 2.25rem;
+}
+
+.b-2 {
+	margin-bottom: 2%;
+}
+
+.displ {
+	font-family: "Lato";
+}
+
+.title {
+	font-family: "Montserrat";
+}
+
+.m-2 {
+	margin: 2%;
+}
+
+.flex {
+	display: flex;
+}
+
+.flex-row {
+	flex-direction: row;
+}
+
+.company-info {
+	width: 30%;
+	margin: 1%;
+}
+
+.info-bar {
+	margin: 1%;
+	width: 70%;
+}
+
+.info-bar a {
+	text-decoration: none;
+	color: #44403c;
+	transition: 0.3s ease-in-out;
+}
+
+.info-bar a:hover {
+	color: #a8a29e;
+}
+
+.look-how a {
+	color: #0ea5e9;
+	text-decoration: none;
+	transition: 0.3s ease-in-out;
+}
+
+#bundle,
+#careers,
+#about,
+#ilib,
+#main,
+#four-oh-four {
+	display: none;
+}
+
+.resp-w-60 {
+	width: 60%;
+}
+
+.resp-w-20 {
+	width: 20%;
+}
+
+.resp-w-80 {
+	width: 80%;
+}
+
+@media screen and (max-width: 1024px) {
+
+	.resp-ac {
+		justify-content: center;
+		align-items: center;
+	}
+
+	.resp-w-20,
+	.resp-w-60,
+	.resp-w-80 {
+		width: 100%;
+	}
+
+	.resp-flex-col,
+	.resp-flex-row {
+		flex-direction: column;
+	}
+
+	.resp-flex-row .company-info,
+	.resp-flex-col .company-info,
+	.resp-flex-col .info-bar,
+	.resp-flex-row .info-bar {
+		width: 95%;
+	}
+
+	.resp-centre {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		flex-direction: column;
+	}
+
+	.resp-description {
+		width: 80%;
+	}
+}
+
+.item-logo.ilib {
+	line-height: 1.25rem;
+	padding: 3%;
+	width: 2.5rem;
+	height: 2.5rem;
+	background-color: black;
+	color: white;
+	display: flex;
+	justify-content: center;
+	border: none;
+	border-radius: 1rem;
+	align-items: center;
+	font-family: "PT Sans";
+	font-size: 2rem;
+}
+
+.m-5 {
+	margin: 5%;
+}
+
+
+
+.ilib-font {
+	font-family: "PT Sans";
+}
+
+.ac {
+	justify-content: center;
+	align-items: center;
+}
+
+.content-a {
+	transition: 0.3s ease-in-out;
+	text-decoration: none;
+	color: black;
+}
+
+.content-a:hover {
+	opacity: 0.5;
+}
+
+.content-a:visited {
+	color: black;
+}
